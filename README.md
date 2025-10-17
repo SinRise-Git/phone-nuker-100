@@ -2,7 +2,7 @@
 A Python script that spams message requests to 100 sites for a phone number of your choosing. I will be adding one different site to the script every day for 100 days.
 ## Current sites
 So far i have added 2 sites out 100
-| Day 1 - 25     | Day 26 - 50     | Day 51 - 75     | Day 76 -100      |
+| 1 - 25     | 26 - 50     | 51 - 75     | 76 -100      |
 |----------------|-----------------|-----------------|------------------|
 | **1881.no**    | day 26          | day 51          | day 76           |
 | **power.no**   | day 27          | day 52          | day 77           |
