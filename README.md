@@ -3,11 +3,11 @@
 A Python script that spams message requests to 100 sites for a phone number of your choosing. I will be adding one different site to the script every day for 100 days.
 
 ## Current sites
-So far i have added 2 sites out 100
+So far i have added 2 sites out 100:
 
 ```json
-{
+[
     "1881.no"       
     "power.no"
-}
+]
 ```
