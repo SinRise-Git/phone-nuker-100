@@ -8,7 +8,7 @@ from site_request.site_teoritentamen import Request as request_teoritentamen
 
 class PhoneNuker:
     def __init__(self):
-        self.phone_number = "45819416"  
+        self.phone_number = "TARGET_PHONE_NUMBER"
         self.request_services = [
             request_1881,
             request_power,
