@@ -54,14 +54,14 @@ class PhoneNuker:
             else:
                 return
 
-        async def readd():
+        async def re_add():
             await asyncio.sleep(wait_time)
             async with self.lock:
                 if request_class not in self.request_services:
                     self.request_services.append(request_class)
                     print(f"Re-added {request_class.__module__} after {wait_time}s")
 
-        asyncio.create_task(readd())
+        asyncio.create_task(re_add())
 
 async def main():
     nuker = PhoneNuker()
